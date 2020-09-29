@@ -1,0 +1,14 @@
+{
+  "name": "mysql_with_node",
+  "version": "1.0.0",
+  "description": "Testing mysql integration with mysql",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^10.1.2"
+  }
+}
