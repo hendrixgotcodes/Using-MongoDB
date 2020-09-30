@@ -25,6 +25,9 @@ class MainWindow extends BrowserWindow {
         globalShortcut.register('cmdorctrl+r',()=>{
             this.reload();
         })
+        globalShortcut.register('cmdorctrl+d',()=>{
+            this.webContents.toggleDevTools();
+        })
 
     }
 }

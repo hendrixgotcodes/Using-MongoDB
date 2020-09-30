@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    position: relative;
+    overflow-y: hidden;
 }
 
 .mainForm h1 {
@@ -48,7 +50,7 @@
 }
 
 .mainForm_submit {
-    margin-top: 5rem;
+    margin: 2rem 0;
     width: 100%;
     background-color: #40945c;
     text-align: center;
@@ -58,4 +60,34 @@
     font-size: 1.2rem;
     color: #fff;
     cursor: pointer;
+}
+.mainForm_alert{
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    color: #fff;
+    font-size: 1.2rem;
+    bottom: -4rem;
+    left: 0;
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.mainForm_alert--error{
+    background-color: red;
+    bottom: 0rem;
+
+}
+.mainForm_alert--info{
+    background-color: #faf736;
+    bottom: 0rem;
+
+}
+.mainForm_alert--success{
+    background-color: #40945c;
+    bottom: 0rem;
 }
